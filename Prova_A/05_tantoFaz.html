@@ -13,10 +13,21 @@
     */
 
     //Entrada
-
-
+    const bebida = prompt('Informe qual bebida deseja comprar: \n USE \n (RF)Refrigerante; \n (AS)Água sem gás; \n (AC)Água com gás; \n (SN)Suco Natural').toUpperCase();
+    const quantidade = Number(prompt('Informe a quantidade que quer comprar dessa bebida:'));
     //Processamento
-
+    switch (bebida) {
+        case "RF": alert(`Custo: R$${quantidade*4.50}`)
+            break;
+        case "AS": alert(`Custo: R$${quantidade*2.90}`)
+            break;
+        case "AC": alert(`Custo: R$${quantidade*3.00}`)
+            break;
+        case "SN": alert(`Custo: R$${quantidade*3.90}`)
+            break;
+        default: alert('Valor Inválido!')
+            break;
+    }
 
     //Saída
 

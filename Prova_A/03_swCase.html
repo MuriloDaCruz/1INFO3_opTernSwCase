@@ -12,10 +12,19 @@
     */
 
     //Entrada
-
+    const oqueComprar = prompt('Informe o que deseja comprar na panificadora: \n USE \n (PF)Pão Francês; \n (BC)Bolo-Cuca; \n (SO)Sonho').toUpperCase();
     
     //Processamento
-
+    switch (oqueComprar) {
+        case "PF": alert("Preço do Kg: R$ 5,00.")
+            break;
+        case "BC": alert("Preço do pedaço: R$ 15,00.")
+            break;
+        case "SO": alert("Preço da Unidade: R$ 1,50.")
+            break;
+        default: alert("Opção de compra inválida!")
+            break;
+    }
 
     //Saída
 

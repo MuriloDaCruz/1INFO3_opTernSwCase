@@ -11,10 +11,13 @@
     */
 
     //Entrada
-
-
+    const preco = Number(prompt('Informe o preço do computador que deseja comprar:'));
+    const parcela = Number(prompt('Informe em quantas parcelas deseja financiar:'));
     //Processamento
-
+    (parcela == 1)? alert(`Não teve diferença no preço. Ainda terá que pagar R$${preco.toFixed(2)}`)
+    :(parcela<=6)? alert(`Teve aumento no preço. Agora terá que pagar R$${preco*1.03.toFixed(2)}`)
+    :(parcela>6)? alert(`Teve aumento no preço. Agora terá que pagar R$${preco*1.07.toFixed(2)}`)
+    :alert('Valor Inválido')
 
     //Saída
 

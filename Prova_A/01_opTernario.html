@@ -12,19 +12,18 @@
     */
 
     //Entrada
-
-
-    //Processamento
-
-    
+    let distancia = Number(prompt('Informe a distância total percorrida pelo entregador:').trim().replace(',', '.'));
+        //Processamento
+        (distancia <= 50) ? alert(`O preço do km é de R$1,00. Foi pago R$${(distancia * 1).toFixed(2)} pela distância percorrida da entrega.`)
+        : (50 < distancia <= 100) ? alert(`O preço do km é de R$1,25. Foi pago R$${(distancia * 1.25).toFixed(2)} pela distância percorrida da entrega.`)
+            : (distancia > 100) ? alert(`O preço do km é de R$1,50. Foi pago R$${(distancia * 1.5).toFixed(2)} pela distância percorrida da entrega.`)
+                : alert('Valor Inválido')
     //Saída
-
-
-/*
-Para testar:
-Entrada: Km (distância de entrega)
-- Informando 20, o custo será de R$ 20,00
-- Informando 60, o custo será de R$ 75,00
-- Informando 120, o custo será de R$ 180,00
-*/
+    /*
+    Para testar:
+    Entrada: Km (distância de entrega)
+    - Informando 20, o custo será de R$ 20,00
+    - Informando 60, o custo será de R$ 75,00
+    - Informando 120, o custo será de R$ 180,00
+    */
 </script>

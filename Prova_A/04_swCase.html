@@ -10,10 +10,19 @@
     */
 
     //Entrada
-
+    const curso = prompt('Informe em qual curso você está matriculado: \n USE \n (MV)Medicina Veterinária; \n (SI)Sistemas de Inofrmação; \n (AG)Agronomia').toUpperCase();
 
     //Processamento
-
+    switch (curso) {
+        case "MV": alert("Curso de 5 anos")
+            break;
+        case "SI": alert("Curso de 4 anos")
+            break;
+        case "AG": alert("Curso de 4 anos e meio")
+            break;
+        default: alert("Inválido!")
+            break;
+    }
 
     //Saída
 
