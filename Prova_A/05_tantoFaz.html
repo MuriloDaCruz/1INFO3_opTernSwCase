@@ -17,7 +17,8 @@
     const quantidade = Number(prompt('Informe a quantidade que quer comprar dessa bebida:'));
     //Processamento
     switch (bebida) {
-        case "RF": alert(`Custo: R$${quantidade*4.50}`)
+        case "RF": let total = quantidade*4.50
+        case total>150: alert(`O custo será de: R$${total-(total*0.10)}`)
             break;
         case "AS": alert(`Custo: R$${quantidade*2.90}`)
             break;

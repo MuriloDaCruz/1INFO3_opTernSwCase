@@ -12,10 +12,10 @@
     */
 
     //Entrada
-    let distancia = Number(prompt('Informe a distância total percorrida pelo entregador:').trim().replace(',', '.'));
+    let distancia = Number(prompt('Informe a distância total percorrida pelo entregador:'));
         //Processamento
         (distancia <= 50) ? alert(`O preço do km é de R$1,00. Foi pago R$${(distancia * 1).toFixed(2)} pela distância percorrida da entrega.`)
-        : (50 < distancia <= 100) ? alert(`O preço do km é de R$1,25. Foi pago R$${(distancia * 1.25).toFixed(2)} pela distância percorrida da entrega.`)
+        : (distancia > 50 && distancia <= 100) ? alert(`O preço do km é de R$1,25. Foi pago R$${(distancia * 1.25).toFixed(2)} pela distância percorrida da entrega.`)
             : (distancia > 100) ? alert(`O preço do km é de R$1,50. Foi pago R$${(distancia * 1.5).toFixed(2)} pela distância percorrida da entrega.`)
                 : alert('Valor Inválido')
     //Saída
